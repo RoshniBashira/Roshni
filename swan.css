@@ -1,0 +1,155 @@
+
+
+*{
+    background-color: lightseagreen;
+}
+.div_2{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    color:black;
+}
+#fox{
+    background-color:black;
+}
+
+.c2{
+    display: flex;
+    gap: 20px;
+
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+button{
+    background-color: cadetblue;
+}
+.div_0{
+    display: flex;
+}
+.div_3{
+    margin-top: 60px;
+    height: 500px;
+}
+
+.div_2-8 h2{
+    border: solid black 2px;
+    width: fit-content;
+    padding-left:2px ;
+    padding-right: 2px;
+    color:white;
+    background-color: black;
+
+}
+.div_2-9 h2{
+    border: dotted  black 2px;
+    width: fit-content;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.div_8{
+    display: flex;
+    gap: 10px;
+}
+.div_10{
+    text-align: center;
+}
+.div_11{
+    border: solid 2px;
+    width: fit-content;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    gap: 10px;
+    margin-left: 20px;
+
+}
+/* .div_11 h3{
+    text-align: center;
+} */
+.div_12{
+    border: solid 2px;
+    width: fit-content;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    gap: 10px;
+    margin-left:20px ;
+
+}
+.div_13{
+    border: solid 2px;
+    width: fit-content;
+    padding-left:20px ;
+    padding-right: 20px;
+    text-align: center;
+     margin-left: 20px;
+    
+    
+}
+.div_14{
+    display: flex;
+}
+.div_15{
+    text-align: center;
+}
+.jerry {
+    display: flex;
+     align-items: center;
+    justify-content: center;
+   
+
+   
+}
+.tom_1{
+    margin-left: 50px;
+    text-align: center;
+   
+
+}
+.tom_2{
+    margin-left: 50px;
+    text-align: center;
+  
+
+}
+.tom_3{
+    margin-left: 50px;
+    text-align: center;
+    
+
+}
+.tom_4{
+    margin-left: 50px;
+    text-align: center;
+    
+    
+}
+.cherry{
+    text-align: center;
+}
+.div_19{
+    text-align: center;
+}
+.plant_1{
+    
+}
+.apple{
+    color: black;
+    background-color:darkgoldenrod;
+    border: solid black 3px;
+    border-radius:10px;
+}
+.mango h2{
+    color:darkblue;
+    border: solid black 4px;
+    border-radius: 10px;
+    background-color: cyan;
+}
+.apple_1{
+ border: solid black 2px;
+}

@@ -1,0 +1,74 @@
+.plant_1{
+   
+    display: flex;
+    gap:190px;
+    margin-top: 50px;
+   
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    transform: translatex(10px);
+    transition: 2x;
+}
+.one{
+    display: flex;
+    border: solid 3px;
+    border-radius: 30px;
+    justify-content:center;
+    align-items: center;
+    width: fit-content;
+    padding-right:4px;
+    padding-left: 4px;
+    background-color:aquamarine;
+    color:black ;
+    transform: translatex(700px);
+    
+}
+.one {
+  h3:hover{
+    color:crimson;
+    }
+
+}
+/* .one_1 h3{
+ text-align:center;
+} */
+.shrub_2 img:hover{
+    width: 150px;
+    transform:scalex(1.5);
+    transition: 2x;
+    border: solid 2px;
+}
+.shrub_1 img{
+    width:260px;
+     border: solid 2px;
+}
+.shrub_1 img:hover{
+    transform: translateY(-3px);
+    transition: 2s;
+}
+.tree{
+    background-color:lightpink;
+    
+    
+}
+*{
+    cursor: pointer;
+}
+.shrub_4 img:hover{
+    width:200px;
+     border: solid 2px;
+     gap: 10px;
+     transform: translateY(-3px);
+    transition: 2s;
+}
+.shrub_3 img:hover{
+     border: solid 4px;
+     transform: translateY(-3px);
+    transition: 2s;
+}
+/* .one_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

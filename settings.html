@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HandTalk - Settings</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🤟 <span>HandTalk</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">🏠 Home</a>
+            <a href="learn.html">📚 Learn</a>
+            <a href="translator.html">🎥 Translator</a>
+            <a href="dictionary.html">📖 Dictionary</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="settings.html">⚙️ Settings</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="settings-page">
+
+        <h1>⚙️ Settings</h1>
+
+        <div class="settings-card">
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>🔊 Voice Translation</h3>
+
+                    <p>
+                        Enable speech output.
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox"
+                           id="voiceToggle"
+                           checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>📝 English Subtitles</h3>
+
+                    <p>
+                        Show translated text at the bottom.
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox"
+                           id="subtitleToggle"
+                           checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>🎥 Camera</h3>
+
+                    <p>
+                        Allow camera access for gesture recognition.
+                    </p>
+
+                </div>
+
+                <span class="setting-status">
+                    Available
+                </span>
+
+            </div>
+
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>🌐 Language</h3>
+
+                    <p>
+                        Select translation language.
+                    </p>
+
+                </div>
+
+                <select id="language">
+
+                    <option value="en-US">
+                        English
+                    </option>
+
+                    <option value="ta-IN">
+                        Tamil
+                    </option>
+
+                    <option value="hi-IN">
+                        Hindi
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

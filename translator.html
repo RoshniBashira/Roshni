@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HandTalk - Translator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MediaPipe -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🤟 <span>HandTalk</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">🏠 Home</a>
+            <a href="learn.html">📚 Learn</a>
+            <a href="translator.html">🎥 Translator</a>
+            <a href="dictionary.html">📖 Dictionary</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="settings.html">⚙️ Settings</a>
+
+        </div>
+
+    </nav>
+
+
+    <main class="translator-page">
+
+        <div class="translator-title">
+
+            <h1>🤖 AI Sign Language Translator</h1>
+
+            <p>
+                Show your hand gesture in front of the camera.
+            </p>
+
+        </div>
+
+
+        <!-- Camera Area -->
+
+        <div class="camera-container">
+
+            <video id="camera"
+                   autoplay
+                   playsinline>
+            </video>
+
+            <canvas id="output"></canvas>
+
+            <div class="camera-status" id="cameraStatus">
+                Camera is not started
+            </div>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="camera-buttons">
+
+            <button id="startCamera"
+                    class="main-btn">
+
+                📷 Start Camera
+
+            </button>
+
+
+            <button id="stopCamera"
+                    class="stop-btn">
+
+                ⛔ Stop Camera
+
+            </button>
+
+        </div>
+
+
+        <!-- Translation -->
+
+        <div class="translation-box">
+
+            <div class="translation-header">
+
+                <h2>📝 Translation</h2>
+
+                <button id="speakButton"
+                        class="voice-btn">
+
+                    🔊 Speak
+
+                </button>
+
+            </div>
+
+
+            <div id="translatedText"
+                 class="translated-text">
+
+                Show a sign to the camera...
+
+            </div>
+
+        </div>
+
+
+        <!-- English subtitles -->
+
+        <div class="subtitle-box">
+
+            <span>English Subtitle:</span>
+
+            <strong id="subtitle">
+
+                Waiting for gesture...
+
+            </strong>
+
+        </div>
+
+
+        <!-- Supported gestures -->
+
+        <section class="gesture-section">
+
+            <h2>🤟 Supported Demo Gestures</h2>
+
+            <div class="gesture-grid">
+
+                <div class="gesture-card">
+                    <span>👍</span>
+                    <p>Thumbs Up</p>
+                    <small>YES / GOOD</small>
+                </div>
+
+                <div class="gesture-card">
+                    <span>✋</span>
+                    <p>Open Palm</p>
+                    <small>HELLO</small>
+                </div>
+
+                <div class="gesture-card">
+                    <span>✌️</span>
+                    <p>Two Fingers</p>
+                    <small>PEACE</small>
+                </div>
+
+                <div class="gesture-card">
+                    <span>🤟</span>
+                    <p>I Love You</p>
+                    <small>I LOVE YOU</small>
+                </div>
+
+                <div class="gesture-card">
+                    <span>✊</span>
+                    <p>Fist</p>
+                    <small>STOP</small>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

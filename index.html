@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HandTalk - Sign Language Translator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- MediaPipe Hands -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Animated I Love You Sign -->
+    <div class="ily-animation">
+        <div class="ily-hand">🤟</div>
+        <span>I Love You</span>
+    </div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🤟 <span>HandTalk</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="learn.html">📚 Learn</a>
+
+            <a href="translator.html">🎥 Translator</a>
+
+            <a href="dictionary.html">📖 Dictionary</a>
+
+            <a href="about.html">ℹ️ About</a>
+
+            <a href="settings.html">⚙️ Settings</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h3>WELCOME TO HAND TALK</h3>
+
+            <h1>
+                BREAKING BARRIERS
+                <br>
+                THROUGH SIGN LANGUAGE
+            </h1>
+
+            <p>
+                Communicate easily with our intelligent sign language
+                translator. Convert signs into text and speech in a
+                simple and accessible way.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="translator.html" class="main-btn">
+                    🎥 Start Translating
+                </a>
+
+                <a href="learn.html" class="secondary-btn">
+                    📚 Learn Sign Language
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hero illustration -->
+
+        <div class="hero-card">
+
+            <div class="floating-hand">
+                🤟
+            </div>
+
+            <h2>Sign → Text → Speech</h2>
+
+            <p>
+                Your hands can speak.
+                <br>
+                Let HandTalk translate them.
+            </p>
+
+            <div class="translation-demo">
+
+                <span>🤟</span>
+
+                <span>→</span>
+
+                <strong>I LOVE YOU</strong>
+
+                <span>→</span>
+
+                <span>🔊</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <h2>How HandTalk Helps</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="feature-icon">📷</div>
+                <h3>Gesture Detection</h3>
+                <p>
+                    Detect hand gestures using your camera.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <h3>Sign to Text</h3>
+                <p>
+                    Convert recognized gestures into English text.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">🔊</div>
+                <h3>Voice Translation</h3>
+                <p>
+                    Listen to the translated text using voice output.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <h3>ISL Dictionary</h3>
+                <p>
+                    Learn common Indian Sign Language signs.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>🤟 HandTalk</h2>
+
+        <p>
+            Breaking communication barriers through technology.
+        </p>
+
+        <p class="copyright">
+            © 2026 HandTalk. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+</html>

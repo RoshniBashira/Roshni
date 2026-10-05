@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HandTalk - Learn Sign Language</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🤟 <span>HandTalk</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">🏠 Home</a>
+            <a href="learn.html">📚 Learn</a>
+            <a href="translator.html">🎥 Translator</a>
+            <a href="dictionary.html">📖 Dictionary</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="settings.html">⚙️ Settings</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="learning-page">
+
+        <div class="learning-heading">
+
+            <h1>🤖 AI Sign Language Learning</h1>
+
+            <p>
+                Learn common signs with our interactive learning assistant.
+            </p>
+
+        </div>
+
+
+        <div class="ai-teacher">
+
+            <div class="ai-avatar">
+                🤖
+            </div>
+
+            <div>
+
+                <h2>AI Sign Teacher</h2>
+
+                <p id="aiMessage">
+                    Hello! Let's learn sign language together.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="learning-cards">
+
+            <div class="learn-card">
+
+                <div class="learn-animation">
+                    👋
+                </div>
+
+                <h2>HELLO</h2>
+
+                <p>
+                    Raise your hand and wave gently.
+                </p>
+
+                <button onclick="playLesson('Hello')">
+                    🔊 Learn
+                </button>
+
+            </div>
+
+
+            <div class="learn-card">
+
+                <div class="learn-animation">
+                    ❤️
+                </div>
+
+                <h2>LOVE</h2>
+
+                <p>
+                    Learn the sign used to express love.
+                </p>
+
+                <button onclick="playLesson('Love')">
+                    🔊 Learn
+                </button>
+
+            </div>
+
+
+            <div class="learn-card">
+
+                <div class="learn-animation">
+                    🤟
+                </div>
+
+                <h2>I LOVE YOU</h2>
+
+                <p>
+                    Learn the popular I Love You hand sign.
+                </p>
+
+                <button onclick="playLesson('I Love You')">
+                    🔊 Learn
+                </button>
+
+            </div>
+
+
+            <div class="learn-card">
+
+                <div class="learn-animation">
+                    👍
+                </div>
+
+                <h2>GOOD</h2>
+
+                <p>
+                    Learn the thumbs-up gesture.
+                </p>
+
+                <button onclick="playLesson('Good')">
+                    🔊 Learn
+                </button>
+
+            </div>
+
+
+            <div class="learn-card">
+
+                <div class="learn-animation">
+                    ✌️
+                </div>
+
+                <h2>PEACE</h2>
+
+                <p>
+                    Learn the two-finger peace gesture.
+                </p>
+
+                <button onclick="playLesson('Peace')">
+                    🔊 Learn
+                </button>
+
+            </div>
+
+
+            <div class="learn-card">
+
+                <div class="learn-animation">
+                    🙏
+                </div>
+
+                <h2>THANK YOU</h2>
+
+                <p>
+                    Learn a commonly used thank-you gesture.
+                </p>
+
+                <button onclick="playLesson('Thank You')">
+                    🔊 Learn
+                </button>
+
+            </div>
+
+        </div>
+        <!-- ================= ISL ALPHABET ================= -->
+
+<section class="alphabet-section">
+
+    <div class="alphabet-heading">
+        <h2>🔤 Learn Sign Language Alphabet</h2>
+
+        <p>
+            Learn the Indian Sign Language alphabet from A to Z.
+            Select a letter to hear its pronunciation.
+        </p>
+    </div>
+
+
+
+    </section> 
+
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
+
+
+<!-- ================================
+     ANIMATED ISL ALPHABET
+================================ -->
+
+<section class="alphabet-learning">
+
+    <div class="alphabet-title">
+
+        <span class="small-title">🤟 HANDTALK ACADEMY</span>
+
+        <h2>Learn the Sign Language Alphabet</h2>
+
+        <p>
+            Learn A to Z using animated Indian Sign Language hand signs.
+            Click any letter to practice.
+        </p>
+
+    </div>
+
+
+     Selected Letter
+
+    <div class="selected-sign">
+
+        <div class="ai-speaking">
+            🤖
+        </div>
+
+        <div class="selected-image">
+
+            <img
+                id="selectedLetter"
+                src="signs/A.gif"
+                alt="selected sign">
+
+        </div>
+
+        <div class="selected-info">
+
+            <span>YOU ARE LEARNING</span>
+
+            <h1 id="selectedLetter">A</h1>
+
+            <p id="selectedText">
+                This is the sign for the letter A.
+            </p>
+
+            <button
+                class="speak-letter"
+                onclick="speakSelectedLetter()">
+
+                🔊 Hear Letter
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+     Alphabet Cards 
+
+    <div class="alphabet-grid">
+
+
+        <div class="alphabet-card active"
+             onclick="selectLetter('A')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_aotWqhW2D9MNHa6hD13XKcxrvB5rMD6Y3SSzrLbzQ&s=10"
+                    alt="ISL A">
+
+            </div>
+
+            <h3>A</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('B')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7mWAUIQ0xbE5fW9Sq6EuG200dfObztisfg7GleImPew&s=10"
+                    alt="ISL B">
+
+            </div>
+
+            <h3>B</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('C')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF61kv2kqnsfP8QNWzAVDVudI6y7DzdE4ySTm7-q6bVA&s=10"
+                    alt="ISL C">
+
+            </div>
+
+            <h3>C</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('D')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc7JTpdgKmZ64ekmxhxQ7_PTDkA7e6Qhy367lzXjH4_A&s=10"
+                    alt="ISL D">
+
+            </div>
+
+            <h3>D</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('E')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqXceu24FqNUqcF6uxC79AcyzEwZ5etdtXrKz3sKoZg&s=10"
+                    alt="ISL E">
+
+            </div>
+
+            <h3>E</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('F')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMHwBg53YsKVeaFd7zkfcc35_iQO_DxKIfnGQAPJwxoQ&s=10"
+                    alt="ISL F">
+
+            </div>
+
+            <h3>F</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('G')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-UMrq1fpEFqWmzay8tdMDkeq6HD7_RTtX6csiN8_4A&s=10"
+                    alt="ISL G">
+
+            </div>
+
+            <h3>G</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('H')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyW5oEV11VjyvUJ2ZF-CG9rG02wh8gyBUC4ODk-BoPeA&s=10"
+                    alt="ISL H">
+
+            </div>
+
+            <h3>H</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('I')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0bk5lGiTU-VcSSBBoqAtlHvs1rRyzSE8svAeVyUm0kg&s=10"
+                    alt="ISL I">
+
+            </div>
+
+            <h3>I</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('J')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PIMUhv1oNha3yS0nFIeIB5y21zrT1c1FvePBWHqFdw&s=10"
+                    alt="ISL J">
+
+            </div>
+
+            <h3>J</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('K')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MbxM8g8NlatJ2ZYBT991x7gW95hyOwuVN4_WMsOJVA&s=10"
+                    alt="ISL K">
+
+            </div>
+
+            <h3>K</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('L')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6JrpV0kyg62563JvL_6BH3mWLV76WHjxTqyvLYIRyQ&s=10"
+                    alt="ISL L">
+
+            </div>
+
+            <h3>L</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('M')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsefGOHzHmo1fmaP6bu78G5XlHG_iyFFSgGSh5fbJCvg&s=10"
+                    alt="ISL M">
+
+            </div>
+
+            <h3>M</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('N')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2E0TrM4kOigWp605achNOPRmyDXKXWN-7J8HOGZ3csg&s=10"
+                    alt="ISL N">
+
+            </div>
+
+            <h3>N</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('O')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu0N5oSvjeZ5AlVKiJ9tlF1WaZOsKoLnuc3Y8QIlexQ&s=10"
+                    alt="ISL O">
+
+            </div>
+
+            <h3>O</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('P')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQei0tU7ydfUZ7G81jpZFYE2WAJBBtJbjkw8vLr9abluw&s=10"
+                    alt="ISL P">
+
+            </div>
+
+            <h3>P</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('Q')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLWE_NCkQliC9vIb3phFnTvBL4GSrtMr-0gDop-HEtqg&s=10"
+                    alt="ISL Q">
+
+            </div>
+
+            <h3>Q</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('R')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq98g3zRUun0ig3Nk9-WAj8CIJ9Tk681mRIvzMQYJb3w&s=10"
+                    alt="ISL R">
+
+            </div>
+
+            <h3>R</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('S')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTu0XGcLXXyrSxZLlPHv9_DjMGwjtmWV5vECoN3051AA&s=10"
+                    alt="ISL S">
+
+            </div>
+
+            <h3>S</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('T')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpKcRYqL6blnuhha5yUcRIy7oSUmpWEoNMR7M5ow1s7w&s=10"
+                    alt="ISL T">
+
+            </div>
+
+            <h3>T</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('U')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI-TgvIuhpawb1esScZ97WAVnTvNUL5xru_8U9XzLBiA&s=10"
+                    alt="ISL U">
+
+            </div>
+
+            <h3>U</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('V')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXF5PsXYA2xvBqjtQZG5FxZQvFKH8VbYopnUcdB55xIw&s=10"
+                    alt="ISL V">
+
+            </div>
+
+            <h3>V</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('W')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXrHL8fOL-AZt0ybQu_zd1jUSMzmmF3FFAJGUFc0yiw&s=10"
+                    alt="ISL W">
+
+            </div>
+
+            <h3>W</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('X')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBMI0KBcOEXz-fZXs4puoP3ouUhUiMSdO-oZY5BK0lA&s=10"
+                    alt="ISL X">
+
+            </div>
+
+            <h3>X</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('Y')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFmeyURZWge443WxGfT6O469CLSPcExHNEZFgzwicARw&s=10"
+                    alt="ISL Y">
+
+            </div>
+
+            <h3>Y</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+
+        <div class="alphabet-card"
+             onclick="selectLetter('Z')">
+
+            <div class="sign-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzWTtnVCdzu4ROwU4KVeuSa0520K3fjaKIyt58H0fT2g&s=10"
+                    alt="ISL Z">
+
+            </div>
+
+            <h3>Z</h3>
+
+            <span>🔊 Learn</span>
+
+        </div>
+
+    </div>
+
+</section> 
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html> 
